@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>telephone</title>
+    <script>
+        function pname() {
+            var ParentName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+            var name = document.getElementById('p_name').value;
+            if (!ParentName.test(name)) {
+                alert('Don,t use numbers and symbols. only use simple and capital letters.');
+                document.getElementById('name').focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+
+        Prent Name :<input type="text" id="p_name" name="p_name" placeholder="First Name">
+        <button id="submit" value="submit" onclick="pname()">submit</button>
+
+    </form>
+</body>
+
+</html>
