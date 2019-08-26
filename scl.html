@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>scl</title>
+    <script>
+        function scl2() {
+            var scl1 = document.getElementById('scl').value;
+            var n = scl1.length;
+            if (n <= 3) {
+                alert("write the fullname of the school")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+
+        School :<input type="text" id="scl" name="scl" placeholder="scl">
+        <button id="submit" value="submit" onclick="scl2()">submit</button>
+
+    </form>
+</body>
+
+</html>
