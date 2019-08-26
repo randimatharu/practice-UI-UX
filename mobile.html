@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>mobile</title>
+    <script>
+        function mob() {
+            var mtel = document.getElementById('mobtel').value;
+            var mt = mtel.length;
+            if (mt <= 9) {
+                alert("Enter the correct format of the mobile number (Ex: 070 XX XXX XX)")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+
+        Mobile Number :<input type="text" id="mobtel" name="mobtel" placeholder="Mobile number"
+            pattern="[0-9]{3} [0-9]{2} [0-9]{3} [0-9]{2}">
+        <button id="submit" value="submit" onclick="mob()">submit</button>
+
+    </form>
+</body>
+
+</html>
